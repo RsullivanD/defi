@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+<title>1 ptit pas... ou 2</title>
+<meta name="theme-color" content="#0A3A38" />
+<link rel="manifest" href="manifest.json" />
+<link rel="stylesheet" href="style.css" />
+<link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@600;700;800&family=Manrope:wght@400;500;600;700&display=swap" rel="stylesheet" />
+</head>
+<body>
+
+  <header class="header">
+    <h1>1 ptit pas... <span>ou 2</span> 🐾</h1>
+    <p class="tagline">Écris ton défi, fais-le, coche-le.</p>
+  </header>
+
+  <main class="app">
+
+    <!-- Ajouter un défi -->
+    <section class="add-box">
+      <input
+        id="challengeInput"
+        type="text"
+        placeholder="Écris ton défi du jour..."
+        maxlength="120"
+        autocomplete="off"
+      />
+      <button id="addBtn">Faire ce pas</button>
+    </section>
+
+    <!-- Défis en attente -->
+    <section>
+      <h2>Tes pas à faire</h2>
+      <ul id="pendingList" class="list"></ul>
+      <p id="emptyPending" class="empty-msg">Rien pour l'instant. Écris un défi ci-dessus 👆</p>
+    </section>
+
+    <!-- Historique -->
+    <section>
+      <button id="historyToggle" class="history-toggle">
+        Voir l'historique <span id="historyCount">(0)</span> ▾
+      </button>
+      <ul id="historyList" class="list history hidden"></ul>
+    </section>
+
+  </main>
+
+  <!-- Panneau de partage -->
+  <div id="shareSheet" class="share-sheet hidden">
+    <div class="share-card">
+      <div class="share-header">
+        <p>Partager ce pas</p>
+        <button id="closeShare" aria-label="Fermer">✕</button>
+      </div>
+      <p id="shareText" class="share-preview"></p>
+      <button id="nativeShareBtn" class="share-native hidden">Partager</button>
+      <div class="share-grid">
+        <a id="waShare" target="_blank" rel="noreferrer" class="share-opt">💬<span>WhatsApp</span></a>
+        <a id="xShare" target="_blank" rel="noreferrer" class="share-opt">✖️<span>X</span></a>
+        <button id="copyShare" class="share-opt">🔗<span id="copyLabel">Copier</span></button>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
