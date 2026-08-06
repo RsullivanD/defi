@@ -1,0 +1,22 @@
+{
+  "name": "1 ptit pas... ou 2",
+  "short_name": "1 ptit pas",
+  "description": "Écris tes défis du jour, coche-les quand c'est fait, partage-les.",
+  "start_url": "index.html",
+  "display": "standalone",
+  "background_color": "#0A3A38",
+  "theme_color": "#0A3A38",
+  "orientation": "portrait",
+  "icons": [
+    {
+      "src": "icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ]
+}
